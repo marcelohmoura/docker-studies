@@ -1,0 +1,1 @@
+UPDATE professores SET periodo={'TARDE'} WHERE cpf = '01106758005' AND nome = 'FELIPE ALVES BUENO';
