@@ -19,3 +19,9 @@ docker container run -it ubuntu /bin/bash
 #Port Bind
 docker container run -d -p 8080:80 nginx
 #http://localhost:8080
+
+#Criando um volume gerenciado pelo Docker
+docker volume create my-vol
+
+#Criando uma rede (Por padrão o driver definido é Bridge)
+docker network create my-net
