@@ -4,8 +4,11 @@ sudo apt install ./docker-desktop-<version>-<arch>.deb
 systemctl --user start docker-desktop
 docker compose version
 
-# Subindo 
-docker compose up -d
+# Subindo (Dependendo da versão usar `docker-compose [argumentos...]`)
+docker compose up -d 
 docker compose ps
 docker compose exec cassandra /bin/bash
 cqlsh -u cassandra -p cassandra
+
+# Derrubar compose
+docker compose down
